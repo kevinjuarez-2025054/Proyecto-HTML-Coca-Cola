@@ -1,0 +1,115 @@
+body{
+    font-family: Arial;
+    overflow:hidden;
+    background-image: url("https://ams3.digitaloceanspaces.com/graffica/2023/02/la-ola-de-cocacola.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.pagina{
+    position: absolute;
+    inset: 0;
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30px);
+    transition: 0.5s;
+    overflow: auto;
+}
+
+.menuCategorias{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: #000000;
+    color: white;
+    padding: 60px;
+    border-radius: 15px;
+    transition: 0.3s;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.categoria img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.categoria span{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.categoria:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pagina:target{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card{
+    width: 230px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.volver{
+    display: inline-block;
+    margin-top: 20px;
+    background: #F40009;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#inicio{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
